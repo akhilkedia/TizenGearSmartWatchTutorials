@@ -7,5 +7,5 @@ This repository has some basic applications for Samsung's `Tizen` wearable devic
 Each of the folders can be imported into `Tizen Studio` and run on a `Gear SmartWatch/Emulator` with `Tizen 2.3.1`
 
 # Documentation
-See the file https://github.com/akhilkedia/TizenGearSmartWatchTutorials/raw/master/Sensor%20%26%20Input%20App%20-%20Final%20Draft.pptx for documentation.
+See the file [Sensor & Input App - Final Draft.pptx](Sensor%20%26%20Input%20App%20-%20Final%20Draft.pptx) for documentation.
 
