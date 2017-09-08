@@ -1,0 +1,34 @@
+collections {
+   group { name: "info_layout";
+      parts{
+         part { name: "left_top_padding";
+            type: SPACER;
+            description { state: "default" 0.0;
+               min: 50 0;
+               fixed: 1 1;
+               align: 0.0 0.0;
+               rel2.relative: 0.0 0.0;
+            }
+         }
+         part { name: "right_bottom_padding";
+            type: SPACER;
+            description { state: "default" 0.0;
+               min: 50 0;
+               fixed: 1 1;
+               align: 1.0 1.0;
+               rel1.relative: 1.0 1.0;
+            }
+         }
+         part { name: "elm.swallow.content";
+         type: SWALLOW;
+         scale: 1;
+            description { state: "default" 0.0;
+               rel1.to: "left_top_padding";
+               rel1.relative: 1.0 1.0;
+               rel2.to: "right_bottom_padding";
+               rel2.relative: 0.0 0.0;
+            }
+         }
+      }
+   }
+}

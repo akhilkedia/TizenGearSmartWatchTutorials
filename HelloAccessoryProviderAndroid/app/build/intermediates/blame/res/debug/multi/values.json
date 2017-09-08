@@ -1,0 +1,220 @@
+[
+    {
+        "outputFile": "/home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/build/intermediates/res/merged/debug/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 57,
+                    "endOffset": 108
+                },
+                "from": {
+                    "file": "/home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/res/values/dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 89,
+                        "startOffset": 89,
+                        "endColumn": 56,
+                        "endOffset": 141
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 113,
+                    "endColumn": 55,
+                    "endOffset": 164
+                },
+                "from": {
+                    "file": "/home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/res/values/dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 147,
+                        "startOffset": 147,
+                        "endColumn": 54,
+                        "endOffset": 197
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 169,
+                    "endColumn": 110,
+                    "endOffset": 275
+                },
+                "from": {
+                    "file": "/home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 168,
+                        "endColumn": 110,
+                        "endOffset": 274
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 280,
+                    "endColumn": 109,
+                    "endOffset": 385
+                },
+                "from": {
+                    "file": "/home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 610,
+                        "endColumn": 109,
+                        "endOffset": 715
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 390,
+                    "endColumn": 97,
+                    "endOffset": 483
+                },
+                "from": {
+                    "file": "/home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 512,
+                        "endColumn": 97,
+                        "endOffset": 605
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 488,
+                    "endColumn": 116,
+                    "endOffset": 600
+                },
+                "from": {
+                    "file": "/home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 279,
+                        "endColumn": 116,
+                        "endOffset": 391
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 605,
+                    "endColumn": 115,
+                    "endOffset": 716
+                },
+                "from": {
+                    "file": "/home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 396,
+                        "endColumn": 115,
+                        "endOffset": 507
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 721,
+                    "endColumn": 54,
+                    "endOffset": 771
+                },
+                "from": {
+                    "file": "/home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 54,
+                        "endOffset": 106
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 776,
+                    "endColumn": 56,
+                    "endOffset": 828
+                },
+                "from": {
+                    "file": "/home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 111,
+                        "endColumn": 56,
+                        "endOffset": 163
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 833,
+                    "endLine": 19,
+                    "endColumn": 12,
+                    "endOffset": 1121
+                },
+                "from": {
+                    "file": "/home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 87,
+                        "startOffset": 188,
+                        "endLine": 16,
+                        "endColumn": 11,
+                        "endOffset": 475
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 1126,
+                    "endLine": 22,
+                    "endColumn": 12,
+                    "endOffset": 1281
+                },
+                "from": {
+                    "file": "/home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 112,
+                        "startOffset": 514,
+                        "endLine": 21,
+                        "endColumn": 11,
+                        "endOffset": 668
+                    }
+                }
+            }
+        ]
+    }
+]

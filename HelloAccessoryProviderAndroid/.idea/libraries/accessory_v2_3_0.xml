@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="accessory-v2.3.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/accessory-v2.3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

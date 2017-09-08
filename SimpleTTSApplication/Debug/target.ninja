@@ -1,0 +1,3 @@
+build main_build: phony simplettsapplication res
+build all: phony main_build
+default all

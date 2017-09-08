@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="2.3.1" package="org.example.simplettsapplication" version="1.0.0">
+    <profile name="wearable"/>
+    <ui-application appid="org.example.simplettsapplication" exec="simplettsapplication" multiple="false" nodisplay="false" taskmanage="true" type="capp">
+        <label>simplettsapplication</label>
+        <icon>simplettsapplication.png</icon>
+    </ui-application>
+    <feature name="http://tizen.org/feature/speech.synthesis">true</feature>
+</manifest>

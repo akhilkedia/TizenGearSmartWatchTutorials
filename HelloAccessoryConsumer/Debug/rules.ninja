@@ -1,0 +1,255 @@
+#################################################################################
+# C/ CPP Compilation Rules
+#################################################################################
+
+rule build_c
+  command = $ctool -MMD -MT $out -MF $out.d $pchInc $cflags -c $in -o $out
+  description = Building $out
+  depfile = $out.d
+  deps = gcc
+
+rule build_long_c
+  command = $ctool -MMD -MT $out -MF $out.d @$out.rsp -c $in -o $out
+  description = Building $out
+  depfile = $out.d
+  deps = gcc
+  rspfile = $out.rsp
+  rspfile_content = $pchInc $cflags
+
+rule build_cpp
+  command = $cpptool -MMD -MT $out -MF $out.d $pchInc $cppflags -c $in -o $out
+  description = Building $out
+  depfile = $out.d
+
+rule build_long_cpp
+  command = $cpptool -MMD -MT $out -MF $out.d @$out.rsp -c $in -o $out
+  description = Building $out
+  depfile = $out.d
+  rspfile = $out.rsp
+  rspfile_content = $pchInc $cppflags
+
+#################################################################################
+# Link Rules
+#################################################################################
+
+rule build_target
+  command = $targettool -o $out $in $userobj $libs $targetflags
+  description = Linking $out
+
+rule long_build_target
+  command = $targettool -o $out @$out.rsp
+  description = Linking $out
+  rspfile = $out.rsp
+  rspfile_content = $in $userobj $libs $targetflags
+
+build main-build: phony all
+
+#################################################################################
+# Prebuild/ Postbuild Rules
+#################################################################################
+
+rule pre_build
+  command = $prebuildcmd
+  description = Executing Prebuild Steps
+  pool = console
+
+rule post_build
+  command = $postbuildcmd
+  description = Executing Postbuild Steps
+  pool = console
+
+rule build_pch
+  command = $pchtool -x c-header -MMD -MT $out -MF $out.d $pchflags -c $in -o $out
+  description = Building $out
+  depfile = $out.d
+
+rule build_long_pch
+  command = $pchtool -x c-header -MMD -MT $out -MF $out.d $pchflags -c $in -o $out
+  description = Building $out
+  depfile = $out.d
+  rspfile = $out.rsp
+  rspfile_content = $pchflags
+
+build pre-build: pre_build
+build post-build: post_build | main_build
+
+#################################################################################
+# Secondary Output  Rules
+#################################################################################
+
+rule build_edc
+  command = $edctool -deps $out.d $edcflags $in $out
+  description = Building $out
+  depfile = $out.d
+  deps = gcc
+
+rule build_long_edc
+  command = $edctool -deps $out.d @$out.rsp $in $out
+  description = Building $out
+  depfile = $out.d
+  deps = gcc
+  rspfile = $out.rsp
+  rspfile_content = $edcflags
+
+rule build_po
+  command = $potool -o $out $in
+  description = Building $out
+
+rule build_long_po
+  command = $potool -o $out @$out.rsp
+  description = Building $out
+  rspfile = $out.rsp
+  rspfile_content = $in
+
+#################################################################################
+# AST Rules
+#################################################################################
+
+rule build_c_ast
+  command = $ctool -emit-ast -c $in -o $out $pchInc $cflags
+  description = Building $out
+
+rule build_long_c_ast
+  command = $ctool -emit-ast -c $in -o $out @$out.rsp
+  description = Building $out
+  rspfile = $out.rsp
+  rspfile_content = $pchInc $cflags
+
+rule build_cpp_ast
+  command = $cpptool -emit-ast -c $in -o $out $pchInc $cppflags
+  description = Building $out
+
+rule build_long_cpp_ast
+  command = $cpptool -emit-ast -c $in -o $out @$out.rsp
+  description = Building $out
+  rspfile = $out.rsp
+  rspfile_content = $pchInc $cppflags
+
+#################################################################################
+# FN Map Rules
+#################################################################################
+
+rule build_c_fn
+  command = clangFnMapGen -o $out -ast $in $in --
+  description = Building $out
+
+rule build_long_c_fn
+  command = clangFnMapGen -o $out -ast $in $in --
+  description = Building $out
+
+rule build_cpp_fn
+  command = clangFnMapGen -o $out -ast $in $in --
+  description = Building $out
+
+rule build_long_cpp_fn
+  command = clangFnMapGen -o $out -ast $in $in --
+  description = Building $out
+
+rule ext_fn
+  command = $shell cat $in > $sareportdir/externalFnMap.txt
+  description = Generating External Function Map
+  pool = console
+
+rule fast_ext_fn
+  command = clangFnMapGen -o $out $in --
+  description = Generating External Function Map
+  pool = console
+
+#################################################################################
+# SA Rules
+#################################################################################
+
+rule build_c_sa
+  command = $ctool --analyze --analyzer-no-default-checks $in -Xclang -analyzer-purge=block -Xclang -analyzer-checker=$sa_checkers -o $sareportdir $pchInc $cflags
+  description = Building $out
+
+rule build_long_c_sa
+  command = $ctool --analyze --analyzer-no-default-checks $in -Xclang -analyzer-purge=block -Xclang -analyzer-checker=$sa_checkers -o $sareportdir @$out.rsp
+  description = Building $out
+  rspfile = $out.rsp
+  rspfile_content = $pchInc $cflags
+
+rule build_cpp_sa
+  command = $cpptool --analyze --analyzer-no-default-checks $in -Xclang -analyzer-purge=block -Xclang -analyzer-checker=$sa_checkers -o $sareportdir $pchInc $cppflags
+  description = Building $out
+
+rule build_long_cpp_sa
+  command = $cpptool --analyze --analyzer-no-default-checks $in -Xclang -analyzer-purge=block -Xclang -analyzer-checker=$sa_checkers -o $sareportdir @$out.rsp
+  description = Building $out
+  rspfile = $out.rsp
+  rspfile_content = $pchInc $cppflags
+
+#################################################################################
+# FAST AST Rules
+#################################################################################
+
+rule build_c_fast_ast
+  command = $ctool -emit-ast -Xclang -fmust-emit-func-decls -c $in -o $out $pchInc $cflags
+  description = Building $out
+
+rule build_long_c_fast_ast
+  command = $ctool -emit-ast -Xclang -fmust-emit-func-decls -c $in -o $out @$out.rsp
+  description = Building $out
+  rspfile = $out.rsp
+  rspfile_content = $pchInc $cflags
+
+rule build_cpp_fast_ast
+  command = $cpptool -emit-ast -Xclang -fmust-emit-func-decls -c $in -o $out $pchInc $cppflags
+  description = Building $out
+
+rule build_long_cpp_fast_ast
+  command = $cpptool -emit-ast -Xclang -fmust-emit-func-decls -c $in -o $out @$out.rsp
+  description = Building $out
+  rspfile = $out.rsp
+  rspfile_content = $pchInc $cppflags
+
+#################################################################################
+# FAST SA Rules
+#################################################################################
+
+ast_deps_prefix = Importing AST for File:
+rule build_c_fast_sa
+  command = $ctool --analyze --analyzer-no-default-checks $in -Xanalyzer -analyzer-purge=block -Xanalyzer -analyzer-checker=$sa_checkers -Xanalyzer -emit-ast-deps -o $out
+  description = Analyzing $in
+  deps = ast
+
+rule build_long_c_fast_sa
+  command = $ctool --analyze --analyzer-no-default-checks $in -Xanalyzer -analyzer-purge=block -Xanalyzer -analyzer-checker=$sa_checkers -Xanalyzer -emit-ast-deps -o $out
+  description = Analyzing $in
+  deps = ast
+
+rule build_cpp_fast_sa
+  command = $cpptool --analyze --analyzer-no-default-checks $in -Xanalyzer -analyzer-purge=block -Xanalyzer -analyzer-checker=$sa_checkers -Xanalyzer -emit-ast-deps -o $out
+  description = Analyzing $in
+  deps = ast
+
+rule build_long_cpp_fast_sa
+  command = $cpptool --analyze --analyzer-no-default-checks $in -Xanalyzer -analyzer-purge=block -Xanalyzer -analyzer-checker=$sa_checkers -Xanalyzer -emit-ast-deps -o $out
+  description = Analyzing $in
+  deps = ast
+
+#################################################################################
+# Clean Rules
+#################################################################################
+
+rule clean_all
+  command = ninja -t clean
+  description = Cleaning build files ...
+build clean: clean_all || clean_sa
+
+rule sa_report_clean
+  command = rm -rf $sareportdir/*.xml rm -rf $sareportdir/src
+  description = Cleaning SA Report files ..
+build clean_sa: sa_report_clean
+
+#################################################################################
+# Compilation DB Step
+#################################################################################
+
+rule compdb_json
+  command = $shell ninja -t compdb cc cxx > $out
+  description = Generating $out
+build $builddir/compile_commands.json: compdb_json
+build compdb: phony $builddir/compile_commands.json
+
+

@@ -1,0 +1,28 @@
+[
+    {
+        "outputFile": "/home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/build/intermediates/res/merged/debug/values-v14/values-v14.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 4,
+                    "endColumn": 12,
+                    "endOffset": 201
+                },
+                "from": {
+                    "file": "/home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/res/values-v14/styles.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 66,
+                        "startOffset": 220,
+                        "endLine": 8,
+                        "endColumn": 11,
+                        "endOffset": 365
+                    }
+                }
+            }
+        ]
+    }
+]

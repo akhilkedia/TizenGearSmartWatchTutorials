@@ -1,0 +1,103 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:2:1-47:12
+	xmlns:android
+		ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:2:11-69
+	package
+		ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:3:5-80
+		INJECTED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml
+		INJECTED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml
+	android:versionName
+		ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:5:5-32
+		INJECTED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml
+		INJECTED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml
+	android:versionCode
+		ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:4:5-28
+		INJECTED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml
+		INJECTED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.BLUETOOTH
+ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:7:5-68
+	android:name
+		ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:7:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:8:5-74
+	android:name
+		ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:8:22-71
+uses-permission#com.samsung.accessory.permission.ACCESSORY_FRAMEWORK
+ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:9:5-92
+	android:name
+		ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:9:22-89
+uses-permission#com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY
+ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:10:5-117
+	android:name
+		ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:10:22-114
+uses-permission#com.samsung.WATCH_APP_TYPE.Companion
+ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:11:5-76
+	android:name
+		ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:11:22-73
+uses-permission#com.samsung.wmanager.ENABLE_NOTIFICATION
+ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:12:5-80
+	android:name
+		ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:12:22-77
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:13:5-80
+	android:name
+		ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:13:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:14:5-78
+	android:name
+		ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:14:22-76
+uses-sdk
+ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:17:5-19:41
+	android:targetSdkVersion
+		ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:19:9-38
+		INJECTED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml
+		INJECTED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:18:9-35
+		INJECTED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml
+		INJECTED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml
+application
+ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:21:5-45:19
+	android:label
+		ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:24:9-41
+	android:allowBackup
+		ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:22:9-35
+	android:icon
+		ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:23:9-45
+service#com.samsung.android.sdk.accessory.example.helloaccessory.provider.ProviderService
+ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:26:9-117
+	android:name
+		ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:26:18-114
+receiver#com.samsung.android.sdk.accessory.RegisterUponInstallReceiver
+ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:28:9-32:20
+	android:name
+		ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:28:19-95
+intent-filter#com.samsung.accessory.action.REGISTER_AGENT
+ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:29:13-31:29
+action#com.samsung.accessory.action.REGISTER_AGENT
+ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:30:17-86
+	android:name
+		ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:30:25-83
+receiver#com.samsung.android.sdk.accessory.ServiceConnectionIndicationBroadcastReceiver
+ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:33:9-37:20
+	android:name
+		ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:33:19-112
+intent-filter#com.samsung.accessory.action.SERVICE_CONNECTION_REQUESTED
+ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:34:13-36:29
+action#com.samsung.accessory.action.SERVICE_CONNECTION_REQUESTED
+ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:35:17-100
+	android:name
+		ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:35:25-97
+meta-data#AccessoryServicesLocation
+ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:39:9-41:62
+	android:name
+		ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:40:13-53
+	android:value
+		ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:41:13-59
+meta-data#GearAppType
+ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:42:9-44:35
+	android:name
+		ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:43:13-39
+	android:value
+		ADDED from /home/kunal/Akhil-temp/HelloAccessory_Native/Provider(Tizen)_Consumer(Android)/OurProvider/app/src/main/AndroidManifest.xml:44:13-32

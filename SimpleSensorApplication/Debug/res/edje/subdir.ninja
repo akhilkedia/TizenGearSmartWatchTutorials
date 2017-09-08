@@ -1,0 +1,9 @@
+################################################################################
+# Automatically-generated file. Do not edit!
+################################################################################
+
+
+edctool = edje_cc
+edcflags = -id "C:/Test/Workspace/SimpleSensorApplication/edje/images" -id "C:/Test/tizen-sdk/tools/enventor/share/enventor/images" -sd "C:/Test/Workspace/SimpleSensorApplication/edje/sounds" -sd "C:/Test/tizen-sdk/tools/enventor/share/enventor/sounds" -fd "C:/Test/Workspace/SimpleSensorApplication/edje/fonts" -fd "C:/Test/tizen-sdk/tools/enventor/share/enventor/fonts"
+
+build res/edje/simplesensorapplication.edj: build_edc ../res/edje/simplesensorapplication.edc 

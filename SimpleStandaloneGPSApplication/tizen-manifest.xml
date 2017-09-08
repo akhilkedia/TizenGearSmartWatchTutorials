@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="2.3.1" package="org.example.simplestandalonegpsapplication" version="1.0.0">
+    <profile name="wearable"/>
+    <ui-application appid="org.example.simplestandalonegpsapplication" exec="simplestandalonegpsapplication" multiple="false" nodisplay="false" taskmanage="true" type="capp">
+        <label>simplestandalonegpsapplication</label>
+        <icon>simplestandalonegpsapplication.png</icon>
+    </ui-application>
+    <privileges>
+        <privilege>http://tizen.org/privilege/location</privilege>
+    </privileges>
+    <feature name="http://tizen.org/feature/location.gps">true</feature>
+    <feature name="http://tizen.org/feature/location.wps">true</feature>
+    <feature name="http://tizen.org/feature/location">true</feature>
+</manifest>
